@@ -9,6 +9,7 @@
 - ##### [Strum](https://lib.rs/crates/strum) (Enum and String macros)
 - ##### [Validator](https://lib.rs/crates/validator) (Struct field validation)
 - ##### [Variantly](https://lib.rs/crates/variantly) (Derive useful `Option`-like methods for enums)
+- ##### [Derive More](https://lib.rs/crates/derive-more) (More derive macros)
 
 ### Popular
 - ##### [Clap](https://lib.rs/crates/clap) (Comprehensive CLI argument parsing)
