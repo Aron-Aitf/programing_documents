@@ -14,7 +14,7 @@
 ### Popular
 - ##### [Clap](https://lib.rs/crates/clap) (Comprehensive CLI argument parsing)
 - ##### [Reqwest](https://lib.rs/crates/reqwest) (Async/Sync HTTP client)
-- ##### [Sea ORM](https://lib.rs/crates/sea-orm) (Ergonomic ORM for rust)
+- ##### [SQLx](https://lib.rs/crates/sqlx) (Simple async database library)
 - ##### [Serde JSON](https://lib.rs/crates/serde_json) (JSON support for serde)
 - ##### [Serde](https://lib.rs/crates/serde) (Derive macros for struct serialization)
 - ##### [Tokio](https://lib.rs/crates/tokio) (Popular async runtime for rust)
