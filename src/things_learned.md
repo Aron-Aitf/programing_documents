@@ -7,7 +7,7 @@
 - #### This only applies to python, in rust SQLx is better
 - 
 ## Avoid many files and folders in python:
-- #### python imports ade messy and hard to deal with
+- #### Python imports are messy and hard to deal with
 - #### so just minimize files
-- #### folders are even worse and are the main problem with python imports
+- #### Folders are even worse and are the main problem with python imports
 - #### This does not apply to rust
