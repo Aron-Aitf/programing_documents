@@ -5,7 +5,7 @@
 - #### The key is to use a ORM
 - #### query builders are acceptable but often a ORM is better
 - #### This only applies to python, in rust SQLx is better
-- 
+
 ## Avoid many files and folders in python:
 - #### Python imports are messy and hard to deal with
 - #### so just minimize files

@@ -51,6 +51,13 @@ pub enum CliArguments {}
     clippy::shadow_reuse,
 )]
 ```
+
+- ## Rustfmt config
+```rust
+max_width = 56
+use_field_init_shorthand = true
+use_small_heuristics = "Max"
+```
 ## Python
 
 - ## Polars config
