@@ -11,3 +11,8 @@
 - #### so just minimize files
 - #### Folders are even worse and are the main problem with python imports
 - #### This does not apply to rust
+
+## APIs are not easy to make in rust:
+- #### In rust api are challenging to make
+- #### Databases are difficult but somewhat easier
+- #### Instead of APIs make CLIs
