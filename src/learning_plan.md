@@ -4,7 +4,7 @@
 
 - ##### There is a lot of cool techniques in papers, or tiny blogs, or GDC slides describing the applications from industry / academia
 
-- ##### Multiple languages (including ones you would not think relevant). I had classes about C, Lisp, Prolog, Python, assembler, C++, and Smalltalk
+- ##### Multiple languages (including ones you would not think relevant). (C, Lisp, Prolog, Python, assembler, C++, and Smalltalk)
 
 - ##### Multiple AI concepts
 
@@ -33,6 +33,7 @@
 - ##### Graduate level statistics, machine learning algorithms, deep learning and a lot more. Theory heavy stuff.
 
 # Key Points
+
 - ##### Embedded Systems
 
 - ##### Networking
@@ -61,5 +62,6 @@
 
 - ##### Scientific computing
 
+- ##### Low level networking
 # Links
 (https://roadmap.sh/computer-science)
