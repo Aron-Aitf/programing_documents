@@ -1,4 +1,4 @@
-# Readme (Table to contents)
+# Readme (Table of contents)
 
 - #### [Code Snippets](https://aron-aitf.github.io/programing_documents/docs/code_snippets.html) (Useful code snippets for rust and python)
 - #### [Good Rust Libraries](https://aron-aitf.github.io/programing_documents/docs/good_rust_libraries.html) (My Favorite/Most used rust libraries)
