@@ -1,0 +1,22 @@
+[book]
+authors = ["Aron Atif"]
+language = "en"
+src = "src"
+title = "Programming Documents"
+
+[rust]
+edition = "2024"
+
+[output.html]
+mathjax-support = true
+smart-punctuation = true
+
+[output.html.playground]
+editable = false
+copyable = true
+copy-js = true
+line-numbers = true
+runnable = false
+
+[build]
+build-dir = "docs"
