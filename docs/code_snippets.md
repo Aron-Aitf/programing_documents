@@ -12,7 +12,7 @@ panic = "abort"
 codegen-units = 1
 ```
 
-- ## async main function
+- ## Async main function
 ```rust
 #[tokio::main(flavor = "multi_thread")]
 async fn main() -> Result<(), Box<dyn Error>> {}
