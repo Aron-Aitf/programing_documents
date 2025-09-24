@@ -207,25 +207,25 @@
 <h3 id="all-the-rather-boring-parts-you-would-not-spend-too-much-time-on-your-own-but-are-actually-useful-data-structures-big-o-notation"><a class="header" href="#all-the-rather-boring-parts-you-would-not-spend-too-much-time-on-your-own-but-are-actually-useful-data-structures-big-o-notation">All the rather boring parts you would not spend too much time on your own but are actually useful (Data Structures, Big O notation)</a></h3>
 </li>
 <li>
-<h3 id="algorithms-backtracking-width-vs-depth-search-and-a-style-stuff-ordering-algorithms-etc"><a class="header" href="#algorithms-backtracking-width-vs-depth-search-and-a-style-stuff-ordering-algorithms-etc">Algorithms: Backtracking, width vs depth search and A*-style stuff, ordering algorithms, etc.</a></h3>
+<h3 id="algorithms-backtracking-width-vs-depth-search-and-a-style-stuff-ordering-algorithms-etc"><a class="header" href="#algorithms-backtracking-width-vs-depth-search-and-a-style-stuff-ordering-algorithms-etc">Algorithms: Backtracking, width vs depth search and A*-style stuff, ordering algorithms, etc</a></h3>
 </li>
 <li>
-<h3 id="algorithm-complexity-o1-on-and-the-like-to-understand-why-your-stuff-goes-so-slowly"><a class="header" href="#algorithm-complexity-o1-on-and-the-like-to-understand-why-your-stuff-goes-so-slowly">Algorithm complexity (O(1), O(n), and the like), to understand why your stuff goes SO slowly.</a></h3>
+<h3 id="algorithm-complexity-o1-on-and-the-like-to-understand-why-your-stuff-goes-so-slowly"><a class="header" href="#algorithm-complexity-o1-on-and-the-like-to-understand-why-your-stuff-goes-so-slowly">Algorithm complexity (O(1), O(n), and the like), to understand why your stuff goes SO slowly</a></h3>
 </li>
 <li>
-<h3 id="design-patterns-theyre-a-must-in-oop"><a class="header" href="#design-patterns-theyre-a-must-in-oop">Design Patterns: They’re a must in OOP.</a></h3>
+<h3 id="design-patterns-theyre-a-must-in-oop"><a class="header" href="#design-patterns-theyre-a-must-in-oop">Design Patterns: They’re a must in OOP</a></h3>
 </li>
 <li>
-<h3 id="graph-theory-may-be-handy-in-very-specific-situations-also-a-decent-knowledge-in-maths-doesnt-hurt"><a class="header" href="#graph-theory-may-be-handy-in-very-specific-situations-also-a-decent-knowledge-in-maths-doesnt-hurt">Graph Theory may be handy in very specific situations. Also a decent knowledge in maths doesn’t hurt.</a></h3>
+<h3 id="graph-theory-may-be-handy-in-very-specific-situations-also-a-decent-knowledge-in-maths-doesnt-hurt"><a class="header" href="#graph-theory-may-be-handy-in-very-specific-situations-also-a-decent-knowledge-in-maths-doesnt-hurt">Graph Theory may be handy in very specific situations. Also a decent knowledge in maths doesn’t hurt</a></h3>
 </li>
 <li>
-<h3 id="cryptography-the-most-obvious-also-it-doesnt-hurt-to-know-what-a-hashing-function-is-specially-because-you-may-use-hash-tables"><a class="header" href="#cryptography-the-most-obvious-also-it-doesnt-hurt-to-know-what-a-hashing-function-is-specially-because-you-may-use-hash-tables">Cryptography: The most obvious. Also it doesn’t hurt to know what a hashing function is, specially because you may use hash tables.</a></h3>
+<h3 id="cryptography-the-most-obvious-also-it-doesnt-hurt-to-know-what-a-hashing-function-is-specially-because-you-may-use-hash-tables"><a class="header" href="#cryptography-the-most-obvious-also-it-doesnt-hurt-to-know-what-a-hashing-function-is-specially-because-you-may-use-hash-tables">Cryptography: The most obvious. Also it doesn’t hurt to know what a hashing function is, specially because you may use hash tables</a></h3>
 </li>
 <li>
-<h3 id="machine-code-and-how-everything-works-underneath-the-surface-the-stack-local-variables-dynamic-memory-allocation-etc"><a class="header" href="#machine-code-and-how-everything-works-underneath-the-surface-the-stack-local-variables-dynamic-memory-allocation-etc">Machine code and how everything works underneath the surface, the stack, local variables, dynamic memory allocation, etc.</a></h3>
+<h3 id="machine-code-and-how-everything-works-underneath-the-surface-the-stack-local-variables-dynamic-memory-allocation-etc"><a class="header" href="#machine-code-and-how-everything-works-underneath-the-surface-the-stack-local-variables-dynamic-memory-allocation-etc">Machine code and how everything works underneath the surface, the stack, local variables, dynamic memory allocation, etc</a></h3>
 </li>
 <li>
-<h3 id="graduate-level-statistics-machine-learning-algorithms-deep-learning-and-a-lot-more-theory-heavy-stuff"><a class="header" href="#graduate-level-statistics-machine-learning-algorithms-deep-learning-and-a-lot-more-theory-heavy-stuff">Graduate level statistics, machine learning algorithms, deep learning and a lot more. Theory heavy stuff.</a></h3>
+<h3 id="graduate-level-statistics-machine-learning-algorithms-deep-learning-and-a-lot-more-theory-heavy-stuff"><a class="header" href="#graduate-level-statistics-machine-learning-algorithms-deep-learning-and-a-lot-more-theory-heavy-stuff">Graduate level statistics, machine learning algorithms, deep learning and a lot more. Theory heavy stuff</a></h3>
 </li>
 </ul>
 <h1 id="key-points"><a class="header" href="#key-points">Key Points</a></h1>
@@ -307,6 +307,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

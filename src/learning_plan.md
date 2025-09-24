@@ -18,19 +18,19 @@
 
 - ### All the rather boring parts you would not spend too much time on your own but are actually useful (Data Structures, Big O notation)
 
-- ### Algorithms: Backtracking, width vs depth search and A*-style stuff, ordering algorithms, etc.
+- ### Algorithms: Backtracking, width vs depth search and A*-style stuff, ordering algorithms, etc
 
-- ### Algorithm complexity (O(1), O(n), and the like), to understand why your stuff goes SO slowly.
+- ### Algorithm complexity (O(1), O(n), and the like), to understand why your stuff goes SO slowly
 
-- ### Design Patterns: They're a must in OOP.
+- ### Design Patterns: They're a must in OOP
 
-- ### Graph Theory may be handy in very specific situations. Also a decent knowledge in maths doesn't hurt.
+- ### Graph Theory may be handy in very specific situations. Also a decent knowledge in maths doesn't hurt
 
-- ### Cryptography: The most obvious. Also it doesn't hurt to know what a hashing function is, specially because you may use hash tables.
+- ### Cryptography: The most obvious. Also it doesn't hurt to know what a hashing function is, specially because you may use hash tables
 
-- ### Machine code and how everything works underneath the surface, the stack, local variables, dynamic memory allocation, etc.
+- ### Machine code and how everything works underneath the surface, the stack, local variables, dynamic memory allocation, etc
 
-- ### Graduate level statistics, machine learning algorithms, deep learning and a lot more. Theory heavy stuff.
+- ### Graduate level statistics, machine learning algorithms, deep learning and a lot more. Theory heavy stuff
 
 # Key Points
 

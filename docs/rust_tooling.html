@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Code Snippets - Programming Documents</title>
+        <title>Rust Tooling - Programming Documents</title>
 
 
         <!-- Custom HTML head -->
@@ -177,127 +177,52 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="code-snippets"><a class="header" href="#code-snippets">Code Snippets</a></h1>
-<h2 id="rust"><a class="header" href="#rust">Rust:</a></h2>
+                        <h1 id="useful-cargo-subcommands"><a class="header" href="#useful-cargo-subcommands">Useful Cargo subcommands</a></h1>
+<h2 id="basic-checking"><a class="header" href="#basic-checking">Basic Checking:</a></h2>
 <ul>
 <li>
-<h2 id="optimized-cargotoml"><a class="header" href="#optimized-cargotoml">Optimized cargo.toml</a></h2>
+<h3 id="cargo-check-code-compiles"><a class="header" href="#cargo-check-code-compiles">cargo check (Code Compiles)</a></h3>
+</li>
+<li>
+<h3 id="cargo-test-tests-pass"><a class="header" href="#cargo-test-tests-pass">cargo test (Tests Pass)</a></h3>
+</li>
+<li>
+<h3 id="cargo-clippy-code-style-is-goodidiomatic"><a class="header" href="#cargo-clippy-code-style-is-goodidiomatic">cargo clippy (Code Style is Good/Idiomatic)</a></h3>
+</li>
+<li>
+<h3 id="cargo-fmt-code-is-well-formatted"><a class="header" href="#cargo-fmt-code-is-well-formatted">cargo fmt (Code is well Formatted)</a></h3>
+</li>
+<li>
+<h3 id="cargo-audit-code-dependencies-dont-have-security-vulnerabilities-"><a class="header" href="#cargo-audit-code-dependencies-dont-have-security-vulnerabilities-">cargo audit (Code dependencies don’t have security vulnerabilities )</a></h3>
+</li>
+<li>
+<h3 id="cargo-update-code-dependencies-are-up-to-date"><a class="header" href="#cargo-update-code-dependencies-are-up-to-date">cargo update (Code dependencies are up to date)</a></h3>
+</li>
+<li>
+<h3 id="cargo-udeps-code-uses-dependencies"><a class="header" href="#cargo-udeps-code-uses-dependencies">cargo udeps (Code uses dependencies)</a></h3>
 </li>
 </ul>
-<pre><code class="language-toml">[profile.release]
-lto = true
-strip = true
-opt-level = 3
-panic = "abort"
-codegen-units = 1
-</code></pre>
+<h2 id="advanced-checking"><a class="header" href="#advanced-checking">Advanced Checking:</a></h2>
 <ul>
 <li>
-<h2 id="async-main-function"><a class="header" href="#async-main-function">Async main function</a></h2>
+<h3 id="cargo-miri-unsafe-code-is-not-undefined"><a class="header" href="#cargo-miri-unsafe-code-is-not-undefined">cargo miri (Unsafe code is not undefined)</a></h3>
 </li>
-</ul>
-<pre><code class="language-rust">#[tokio::main(flavor = "multi_thread")]
-async fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {}</code></pre>
-<ul>
 <li>
-<h2 id="clap-subcommands"><a class="header" href="#clap-subcommands">Clap Subcommands</a></h2>
+<h3 id="cargo-loom-miri-alternative"><a class="header" href="#cargo-loom-miri-alternative">cargo loom (Miri alternative)</a></h3>
 </li>
-</ul>
-<pre><code class="language-rust">use clap::{Parser, value_parser};
-
-#[derive(Parser, Debug, Clone)]
-pub enum CliArguments {}</code></pre>
-<ul>
 <li>
-<h2 id="clippy-config"><a class="header" href="#clippy-config">Clippy config</a></h2>
+<h3 id="cargo-fuzz-fuzz-tests-pass"><a class="header" href="#cargo-fuzz-fuzz-tests-pass">cargo fuzz (Fuzz tests pass)</a></h3>
 </li>
 </ul>
-<pre><code class="language-rust">#![warn(
-    clippy::all,
-    clippy::restriction,
-    clippy::pedantic,
-    clippy::nursery,
-    clippy::cargo
-)]
-#![allow(
-    clippy::missing_docs_in_private_items,
-    clippy::question_mark_used,
-    clippy::std_instead_of_core,
-    clippy::cargo_common_metadata,
-    clippy::blanket_clippy_restriction_lints,
-    clippy::print_stdout,
-    clippy::implicit_return,
-    clippy::unwrap_used,
-    clippy::arbitrary_source_item_ordering,
-    clippy::single_call_fn,
-    clippy::allow_attributes_without_reason,
-    clippy::missing_const_for_fn,
-    clippy::shadow_reuse,
-)]</code></pre>
-<ul>
-<li>
-<h2 id="rustfmt-config"><a class="header" href="#rustfmt-config">Rustfmt config</a></h2>
-</li>
-</ul>
-<pre><code class="language-rust">max_width = 56
-use_field_init_shorthand = true
-use_small_heuristics = "Max"</code></pre>
-<h2 id="python"><a class="header" href="#python">Python</a></h2>
-<ul>
-<li>
-<h2 id="polars-config"><a class="header" href="#polars-config">Polars config</a></h2>
-</li>
-</ul>
-<pre><code class="language-python">from polars import Config
-
-Config.set_engine_affinity(engine="streaming")
-Config.set_tbl_cols(-1)
-Config.set_tbl_rows(-1)
-Config.set_tbl_width_chars(-1)
-Config.set_tbl_formatting("UTF8_FULL", rounded_corners=True)
-Config.set_tbl_cell_alignment("CENTER")
-Config.set_tbl_column_data_type_inline(True)
-</code></pre>
-<ul>
-<li>
-<h2 id="fastapi-app"><a class="header" href="#fastapi-app">Fastapi App</a></h2>
-</li>
-</ul>
-<pre><code class="language-python">from fastapi import FastAPI
-
-DESCRIPTION = """
-# A API
-"""
-
-app = FastAPI(
-    swagger_ui_parameters = {"tryItOutEnabled": True},
-    title = "API",
-    debug = True,
-    version = "0",
-    description = DESCRIPTION.strip(),
-)
-
-
-@app.get("/")
-def home() -&gt; dict[str, str]:
-    return {
-        "title" : "A API",
-        "description" : DESCRIPTION,
-        "description_type" : "markdown"
-    }
-</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="things_learned.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="good_rust_libraries.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -305,13 +230,10 @@ def home() -&gt; dict[str, str]:
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="things_learned.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="good_rust_libraries.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

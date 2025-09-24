@@ -2,7 +2,8 @@
 
 ## Rust:
 
-- ## Optimized cargo.toml 
+- ## Optimized cargo.toml
+
 ```toml
 [profile.release]
 lto = true
@@ -13,12 +14,14 @@ codegen-units = 1
 ```
 
 - ## Async main function
+
 ```rust
 #[tokio::main(flavor = "multi_thread")]
 async fn main() -> Result<(), Box<dyn Error>> {}
 ```
 
 - ## Clap Subcommands
+
 ```rust
 use clap::{Parser, value_parser};
 
@@ -27,6 +30,7 @@ pub enum CliArguments {}
 ```
 
 - ## Clippy config 
+
 ```rust
 #![warn(
     clippy::all,
@@ -53,14 +57,17 @@ pub enum CliArguments {}
 ```
 
 - ## Rustfmt config
+
 ```rust
 max_width = 56
 use_field_init_shorthand = true
 use_small_heuristics = "Max"
 ```
+
 ## Python
 
 - ## Polars config
+
 ```python
 from polars import Config
 
@@ -72,7 +79,9 @@ Config.set_tbl_formatting("UTF8_FULL", rounded_corners=True)
 Config.set_tbl_cell_alignment("CENTER")
 Config.set_tbl_column_data_type_inline(True)
 ```
+
 - ## Fastapi App
+
 ```python
 from fastapi import FastAPI
 
