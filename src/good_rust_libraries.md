@@ -10,6 +10,7 @@
 - ### [Validator](https://lib.rs/crates/validator) (Struct field validation)
 - ### [Variantly](https://lib.rs/crates/variantly) (Derive useful `Option`-like methods for enums)
 - ### [Derive More](https://lib.rs/crates/derive-more) (More derive macros)
+- ### [Fake](https://aron-aitf.github.io/programing_documents/good_rust_libraries.html) (Alternative to [Fakeit](https://lib.rs/crates/fakeit) with derive macros)
 
 ### Popular
 - ### [Clap](https://lib.rs/crates/clap) (Comprehensive CLI argument parsing)
